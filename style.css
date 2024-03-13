@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    background-color: lightgray;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 150px;
+    color: #fff;
+    background-color: rgb(58, 172, 144);
+}
+
+i {
+    color: orange;
+}
+
+.logo,
+nav div {
+    cursor: pointer;
+}
+
+.logo1 {
+    color: white;
+}
+
+.main-part {
+    transition-duration: .5s;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.img {
+    width: 200px;
+    height: 200px;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.img:hover {
+    transform: scale(1.2);
+}
+
+.scale {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.pricent {
+    position: absolute;
+    color: red;
+}
+
+.block-img {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    width: 100%;
+    margin: 40px auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 200px;
+
+}
+
+.content-img {
+    background-color: #fff;
+    width: 100%;
+    height: 60%;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.plants-name {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.plants-price {
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.products-nav{
+    margin-left: 150px;
+    margin-right: 150px;
+    max-width: 1400px;
+}
+
+.write-block{
+    position: relative;
+    top: 80px;
+    margin-left: 100px;
+}
+
+.add-cart {
+    border: none;
+    padding: 7px;
+    background-color: rgb(17, 100, 17);
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.img1 {
+    width: 500px;
+    height: 300px;
+    transition: all .7s ease-in-out;
+    cursor: pointer;
+}
+
+.img1:hover {
+    transform: scale(1.3);
+}
+
+.scale1 {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.plant-name {
+    font-size: 28px;
+    font-weight: 600;
+    position: relative;
+    top: -300px;
+    margin-left: 450px;
+}
+
+.plant-price {
+    font-size: 26px;
+    opacity: 0.7;
+    position: relative;
+    top: -300px;
+    margin-left: 450px;
+}
+
+.plants-data {
+    position: relative;
+    top: -300px;
+    margin-left: 450px;
+}
+
+.add-cart1 {
+    border: none;
+    padding: 7px;
+    background-color: rgb(17, 100, 17);
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    top: -280px;
+    margin-left: 450px;
+}
+
+.cost-nav {
+    position: fixed;
+    top: 0;
+    right: -700px;
+    width: 30%;
+    height: 100vh;
+    z-index: 3;
+    overflow: scroll;
+    background-color: #fff;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: lightgray;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.navbar1 {
+    margin-left: auto;
+    padding: 0 40px 0 0;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.icon{
+    color: black;
+    font-size: 25px;
+    position: relative;
+    left: 35px;
+    top: 4px;
+}
+
+.search_box{
+    margin: auto;
+}
+
+li {
+    list-style: none;
+
+}
+
+ul li a {
+    color: white;
+}
+
+.pro {
+    width: 400px;
+    height: 40px;
+    border-radius: 7px;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    color: #3AAC90;
+    padding-left: 35px;
+}
+
+.duct {
+    width: 400px;
+    height: 40px;
+    border-radius: 7px;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    color: #3AAC90;
+    padding-left: 35px;
+}
+.body p {
+    opacity: 0.7;
+    margin-top: 300px;
+    margin-left: 130px;
+    font-size: 20px;
+}
+
+.block {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.div1,
+.div2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.div1 i,
+.increament,
+.decreament {
+    cursor: pointer;
+}
+
+.inc-dec {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    padding: 10px;
+    justify-content: space-between;
+    border: 2px solid grey;
+}
+
+.div1-img {
+    width: 20px;
+    height: 20px;
+}
+
+.checkout {
+    background-color: blue;
+    color: #fff;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 3px;
+    border: none;
+    height: 40px;
+    margin: 20px auto;
+    position: relative;
+    top: 500px;
+}
+
+.flower-window {
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: -1500px;
+    transition-duration: .5s;
+}
+
+.container {
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.container img {
+    width: 500px;
+    height: 500px;
+}
+
+.flower-about {
+    padding: 80px 10px 50px 10px;
+    column-gap: 30px;
+
+}
+
+.flower-about h2 {
+    font-size: 32px;
+}
+
+.flower-about h3 {
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.flower-about p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.copyright {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.rat {
+    position: relative;
+    top: -300px;
+    margin-left: 450px;
+}
+
+.images {
+    position: absolute;
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    margin-top: 10px;
+    max-width: 400px;
+}
+
+.images img {
+    width: 90px;
+    height: 70px;
+    cursor: pointer;
+    overflow-x: auto;
+}
+
+.more{
+    position: relative;
+    color: grey;
+    margin: 50px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.more-block{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-left: 50px;
+}
+
+.wrap-block{
+    position: absolute;
+    top: 640px;
+}
+.nabbar{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    background-color: #3AAC90;
+}
+.add-cart1{
+    width: 150px;
+    height: 40px;
+}
+.quan{
+    position: relative;
+    top: -300px;
+    margin-left: 450px;
+    font-size: 28px;
+}
+.qua{
+    position: relative;
+    top: -290px;
+    margin-left: 450px;
+}
+.buttons{
+    position: relative;
+    top: 10px;
+}
+#cart{
+    background-color: blue;
+    color: white;
+    width: 120px;
+    height: 40px;
+    font-weight: 600;
+    border-radius: 5px;
+}
